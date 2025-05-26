@@ -18,7 +18,6 @@ public class Sort0s1s2s {
         int h=arr.length-1;
         int mid=0;
         
-
         while(mid<=h){
 
             if(arr[mid] == 0){
