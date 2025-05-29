@@ -2,19 +2,22 @@ public class UnionIntersection {
 
     /*In this method we merge two arrays to find their union. */
     static void union(int[] arr1, int[] arr2){
-        int a1=arr1.length;
-            int a2=arr2.length;
-            int[] arr3= new int[ a1+a2];
-            for(int i=0; i<arr3.length; i++){
-                if(i<a1){
-                    arr3[i]=arr1[i];
-                }
-                else if(i>=a1 || i<=a2){
-                    arr3[i]=arr2[i-a1];
+        
+        for(int i=0;i<arr1.length;i++){
+            System.out.println(arr1[i]);
+        }
+
+        for(int i=0;i<arr2.length;i++){
+            int j;
+            for(j=0;j<arr1.length;j++){
+                if(arr2[i] == arr1[j]){
+                    break;
                 }
             }
-            for(int i=0; i<arr3.length; i++)
-            System.out.println(arr3[i]);
+            if(j == arr1.length){
+                System.out.println(arr2[i]);
+            }
+        }
     }
 
     /*In this method we only print the elements which are common in two arrays. */
