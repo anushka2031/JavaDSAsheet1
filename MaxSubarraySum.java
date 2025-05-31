@@ -21,8 +21,9 @@ public class MaxSubarraySum {
             }   
         }         
         
-        System.out.println("the sum is: "+max);
-        System.out.println("the subarray consists of elements "+arr[a]+" "+arr[a+1]+" "+arr[a+2]);
+        System.out.println("The sum is: "+max);
+        System.out.println("The subarray consists of elements ");
+        System.out.println(arr[a]+" "+arr[a+1]+" "+arr[a+2]);
        
     } 
 
