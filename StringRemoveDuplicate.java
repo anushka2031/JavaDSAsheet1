@@ -10,7 +10,7 @@ public class StringRemoveDuplicate {
                 str1+=c; 
             }
         }
-        System.out.println("compressed string: " + str1);
+        System.out.println("After the removal of duplicates the new string is " + str1);
 
     }
 }
