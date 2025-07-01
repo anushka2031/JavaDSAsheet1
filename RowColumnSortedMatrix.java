@@ -1,6 +1,6 @@
 public class RowColumnSortedMatrix {
 
-    public static int searchmatri(int[][] matrix , int target){
+    public static int searchmatrix(int[][] matrix , int target){
         
         int row = 0;
         int col = matrix[0].length-1;
@@ -26,7 +26,7 @@ public class RowColumnSortedMatrix {
         int[][] matrix = { {3,30,38} , {20,52,54} , {35,60,69} };
         int x = 35;
 
-        if(searchmatri(matrix, x) == 1){
+        if(searchmatrix(matrix, x) == 1){
             System.out.println("The target element " + x + " is found in the given matrix.");
         }
         else{
