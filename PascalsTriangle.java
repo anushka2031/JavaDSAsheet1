@@ -38,6 +38,7 @@ public class PascalsTriangle {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the no. of rows :");
         int r = sc.nextInt();
+        System.out.println("Pascal's Triangle :");
         printPascalsTriangle(r);
 
     }
