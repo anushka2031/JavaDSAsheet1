@@ -1,5 +1,3 @@
-//import java.util.*;
-
 public class CountIslands {
 
     // No of rows and columns
@@ -33,7 +31,7 @@ public class CountIslands {
         // Mark this cell as visited
         visited[row][col] = true;
 
-        // Recur for all connected neighbours
+        // Reoccur for all connected neighbours
         for (int k = 0; k < 8; ++k)
             if (isSafe(M, row + rowNbr[k], col + colNbr[k],
                        visited))
@@ -69,17 +67,14 @@ public class CountIslands {
     }
 
     // Driver method
-    public static void main(String[] args)
-        throws java.lang.Exception
-    {
+    public static void main(String[] args){
         int M[][] = new int[][] { { 1, 1, 0, 0, 0 },
                                   { 0, 1, 0, 0, 1 },
                                   { 1, 0, 0, 1, 1 },
                                   { 0, 0, 0, 0, 0 },
                                   { 1, 0, 1, 0, 1 } };
         CountIslands I = new CountIslands();
-        System.out.println("Number of islands is: "
-                           + I.countIslands(M));
+        System.out.println("Number of islands is: " + I.countIslands(M));
     }
 
 }
