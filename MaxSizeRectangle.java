@@ -42,8 +42,7 @@ public class MaxSizeRectangle {
             {1, 1, 0, 0}
         };
 
-        System.out.println("The maximum size rectangle matrix area is " + maxArea(mat));
-    }
-
-    
+        System.out.println(" The maximum size rectangle matrix area is " + maxArea(mat));
+    }  
+      
 }
