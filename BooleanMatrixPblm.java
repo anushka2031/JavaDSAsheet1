@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class BooleanMatrixPblm {
 
     public static void booleanMatrix(int[][] mat) {
+        
         int R = mat.length;
         int C = mat[0].length;
 
@@ -27,6 +28,7 @@ public class BooleanMatrixPblm {
                 }
             }
         }
+
     }
 
     public static void main(String[] args) {
@@ -50,6 +52,5 @@ public class BooleanMatrixPblm {
             System.out.println(Arrays.toString(row));
         }
     }
-
     
 }
